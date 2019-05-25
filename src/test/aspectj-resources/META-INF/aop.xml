@@ -1,0 +1,9 @@
+<aspectj>
+  <aspects>
+    <aspect name="sktest.aspectj.runner.example.UpperCaseAspect"/>
+  </aspects>
+  <weaver>
+    <include within="sktest.aspectj.runner.example.HelloTest"/>
+    <include within="sktest.aspectj.runner.example.UpperCaseAspect"/>
+  </weaver>
+</aspectj>
