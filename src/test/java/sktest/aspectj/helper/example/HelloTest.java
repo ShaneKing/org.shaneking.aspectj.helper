@@ -1,15 +1,15 @@
-package sktest.aspectj.runner.example;
+package sktest.aspectj.helper.example;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.shaneking.aspectj.runner.AspectJConfig;
-import org.shaneking.aspectj.runner.AspectJUnit4Runner;
+import org.shaneking.aspectj.helper.AspectJConfig;
+import org.shaneking.aspectj.helper.AspectJUnit4Runner;
 
 /**
  * @author David Zhang
  */
-@AspectJConfig(classpathAdditions = "src/test/aspectj-resources")
+@AspectJConfig(classpathAdditions = "src/test/aspectj-config")
 @RunWith(AspectJUnit4Runner.class)
 public class HelloTest {
 

@@ -1,4 +1,4 @@
-package org.shaneking.aspectj.runner;
+package org.shaneking.aspectj.helper;
 
 import java.lang.annotation.*;
 

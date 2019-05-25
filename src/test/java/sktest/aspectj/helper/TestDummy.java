@@ -1,8 +1,8 @@
-package sktest.aspectj.runner;
+package sktest.aspectj.helper;
 
 import org.junit.*;
 import org.junit.runner.RunWith;
-import org.shaneking.aspectj.runner.AspectJUnit4Runner;
+import org.shaneking.aspectj.helper.AspectJUnit4Runner;
 
 /**
  * @author David Zhang

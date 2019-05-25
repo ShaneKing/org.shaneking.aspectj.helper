@@ -1,4 +1,4 @@
-package org.shaneking.aspectj.runner;
+package org.shaneking.aspectj.helper;
 
 import org.aspectj.weaver.loadtime.WeavingURLClassLoader;
 import org.junit.*;
@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * <p>Use this JUnit Runner if you want to enable AspectJ load time weaving in
- * your test. To use this runner place this annotation on your test class:</p>
+ * your test. To use this helper place this annotation on your test class:</p>
  * <p>{@code @RunWith(AspectJUnit4Runner.class)}</p>
  *
  * @author David Zhang

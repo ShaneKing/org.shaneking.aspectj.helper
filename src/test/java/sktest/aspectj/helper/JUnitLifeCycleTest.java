@@ -1,4 +1,4 @@
-package sktest.aspectj.runner;
+package sktest.aspectj.helper;
 
 import org.junit.AfterClass;
 import org.junit.Assert;

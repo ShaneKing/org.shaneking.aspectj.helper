@@ -6,17 +6,17 @@
   <parent>
     <groupId>org.shaneking.aspectj</groupId>
     <artifactId>org.shaneking.aspectj</artifactId>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <relativePath>../org.shaneking.aspectj</relativePath>
   </parent>
 
-  <artifactId>org.shaneking.aspectj.runner</artifactId>
+  <artifactId>org.shaneking.aspectj.helper</artifactId>
   <version>${project.parent.version}</version>
   <packaging>jar</packaging>
 
-  <name>AspectJ Runner for ShaneKing</name>
-  <description>AspectJ Runner for ShaneKing</description>
-  <url>https://github.com/ShaneKing/org.shaneking.aspectj.runner</url>
+  <name>AspectJ Helper for ShaneKing</name>
+  <description>AspectJ Helper for ShaneKing</description>
+  <url>https://github.com/ShaneKing/org.shaneking.aspectj.helper</url>
   <inceptionYear>2011-2019</inceptionYear>
 
   <organization>
@@ -66,17 +66,17 @@
   </contributors>
 
   <scm>
-    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.aspectj.runner.git</connection>
-    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.aspectj.runner.git</developerConnection>
-    <url>git@github.com:ShaneKing/org.shaneking.aspectj.runner.git</url>
+    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.aspectj.helper.git</connection>
+    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.aspectj.helper.git</developerConnection>
+    <url>git@github.com:ShaneKing/org.shaneking.aspectj.helper.git</url>
   </scm>
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/ShaneKing/org.shaneking.aspectj.runner/issues</url>
+    <url>https://github.com/ShaneKing/org.shaneking.aspectj.helper/issues</url>
   </issueManagement>
   <ciManagement>
     <system>Travis-CI</system>
-    <url>https://travis-ci.org/ShaneKing/org.shaneking.aspectj.runner</url>
+    <url>https://travis-ci.org/ShaneKing/org.shaneking.aspectj.helper</url>
   </ciManagement>
 
   <dependencies>
