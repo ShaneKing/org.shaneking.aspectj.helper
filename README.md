@@ -19,6 +19,8 @@ or
 </dependency>
 ```
 
+[![][mavenbadge img]][mavenbadge]
+
 To enable AspectJ load time weaving place this annotation on your test class:
 
     @RunWith(AspectJUnit4Runner.class)
@@ -48,3 +50,7 @@ This works for me with Maven, but have a look at this [documentation](http://mav
     </plugin>
 
 **Any feedback and improvements are welcome!**
+
+
+[mavenbadge]:http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.shaneking.aspectj%22%20AND%20a%3A%22org.shaneking.aspectj.helper%22
+[mavenbadge img]:https://maven-badges.herokuapp.com/maven-central/org.shaneking.aspectj/org.shaneking.aspectj.helper/badge.svg
