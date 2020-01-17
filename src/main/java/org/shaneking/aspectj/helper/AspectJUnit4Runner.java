@@ -177,5 +177,4 @@ public class AspectJUnit4Runner extends BlockJUnit4ClassRunner {
     List<FrameworkMethod> afters = getTestClass().getAnnotatedMethods(after);
     return afters.isEmpty() ? statement : new RunAfters(statement, afters, target);
   }
-
 }

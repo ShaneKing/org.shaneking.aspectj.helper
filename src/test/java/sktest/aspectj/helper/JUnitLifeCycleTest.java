@@ -14,7 +14,6 @@ import java.util.List;
  * @author David Zhang
  */
 public class JUnitLifeCycleTest {
-
   @BeforeClass
   public static void beforeClass() {
     System.clearProperty("JUnit_After");
@@ -43,5 +42,4 @@ public class JUnitLifeCycleTest {
     Assert.assertEquals("After was not executed", "true", System.getProperty("JUnit_After"));
     Assert.assertEquals("AfterClass was not executed", "true", System.getProperty("JUnit_AfterClass"));
   }
-
 }

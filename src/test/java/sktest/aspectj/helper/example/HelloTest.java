@@ -12,7 +12,6 @@ import org.shaneking.aspectj.helper.AspectJUnit4Runner;
 @AspectJConfig(classpathAdditions = "src/test/aspectj-config")
 @RunWith(AspectJUnit4Runner.class)
 public class HelloTest {
-
   @Test
   public void getLiveGreeting() {
     String expected = "Hello DAVID!";
@@ -20,5 +19,4 @@ public class HelloTest {
     String greeting = helloService.sayHello("David");
     Assert.assertEquals("UpperCaseAspect must convert name to upper case.", expected, greeting);
   }
-
 }

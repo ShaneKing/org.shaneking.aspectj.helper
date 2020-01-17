@@ -16,7 +16,6 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Inherited
 public @interface AspectJConfig {
-
   /**
    * Use this to append additional classpath entries.
    * This is especially useful if you want your tests to use different
