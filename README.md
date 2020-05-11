@@ -14,8 +14,8 @@ or
 ```xml
 <dependency>
     <groupId>org.shaneking.aspectj</groupId>
-    <artifactId>org.shaneking.aspectj.helper</artifactId>
-    <version>0.4.0</version>
+    <artifactId>org.shaneking.aspectj.test</artifactId>
+    <version>0.4.7</version>
 </dependency>
 ```
 
@@ -52,5 +52,5 @@ This works for me with Maven, but have a look at this [documentation](http://mav
 **Any feedback and improvements are welcome!**
 
 
-[mavenbadge]:http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.shaneking.aspectj%22%20AND%20a%3A%22org.shaneking.aspectj.helper%22
-[mavenbadge img]:https://maven-badges.herokuapp.com/maven-central/org.shaneking.aspectj/org.shaneking.aspectj.helper/badge.svg
+[mavenbadge]:http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.shaneking.aspectj%22%20AND%20a%3A%22org.shaneking.aspectj.test%22
+[mavenbadge img]:https://maven-badges.herokuapp.com/maven-central/org.shaneking.aspectj/org.shaneking.aspectj.test/badge.svg

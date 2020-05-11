@@ -1,4 +1,4 @@
-package sktest.aspectj.helper.example;
+package sktest.aspectj.test.example;
 
 /**
  * @author David Zhang

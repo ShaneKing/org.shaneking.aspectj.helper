@@ -1,4 +1,4 @@
-package org.shaneking.aspectj.helper;
+package org.shaneking.aspectj.test;
 
 import java.lang.annotation.*;
 

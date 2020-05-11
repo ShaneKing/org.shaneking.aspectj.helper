@@ -1,10 +1,12 @@
-package org.shaneking.aspectj.helper;
+package org.shaneking.aspectj.test;
 
 import org.aspectj.weaver.loadtime.WeavingURLClassLoader;
 import org.junit.*;
 import org.junit.internal.runners.statements.ExpectException;
 import org.junit.internal.runners.statements.RunAfters;
 import org.junit.internal.runners.statements.RunBefores;
+import org.junit.rules.MethodRule;
+import org.junit.rules.TestRule;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.FrameworkMethod;
@@ -176,5 +178,38 @@ public class AspectJUnit4Runner extends BlockJUnit4ClassRunner {
     Class<? extends Annotation> after = loadClassFromClassLoader(After.class, cl);
     List<FrameworkMethod> afters = getTestClass().getAnnotatedMethods(after);
     return afters.isEmpty() ? statement : new RunAfters(statement, afters, target);
+  }
+
+  //Add by ShaneKing, Can't support SKUnit still, need research.
+  @Override
+  protected List<TestRule> getTestRules(Object target) {
+    Class<? extends Annotation> rule = loadClassFromClassLoader(Rule.class, cl);
+    List<TestRule> result = getTestClass().getAnnotatedMethodValues(target,
+      rule, TestRule.class);
+
+    result.addAll(getTestClass().getAnnotatedFieldValues(target,
+      rule, TestRule.class));
+
+    return result;
+  }
+
+  @Override
+  protected List<MethodRule> rules(Object target) {
+    Class<? extends Annotation> rule = loadClassFromClassLoader(Rule.class, cl);
+    List<MethodRule> rules = getTestClass().getAnnotatedMethodValues(target,
+      rule, MethodRule.class);
+
+    rules.addAll(getTestClass().getAnnotatedFieldValues(target,
+      rule, MethodRule.class));
+
+    return rules;
+  }
+
+  @Override
+  protected List<TestRule> classRules() {
+    Class<? extends Annotation> classRule = loadClassFromClassLoader(ClassRule.class, cl);
+    List<TestRule> result = testClass.getAnnotatedMethodValues(null, classRule, TestRule.class);
+    result.addAll(testClass.getAnnotatedFieldValues(null, classRule, TestRule.class));
+    return result;
   }
 }

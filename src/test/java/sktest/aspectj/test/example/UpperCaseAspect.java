@@ -1,4 +1,4 @@
-package sktest.aspectj.helper.example;
+package sktest.aspectj.test.example;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

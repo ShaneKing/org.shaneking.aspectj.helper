@@ -1,32 +1,29 @@
-package sktest.aspectj.helper;
+package sktest.aspectj.test;
 
 import org.junit.*;
-import org.junit.runner.RunWith;
-import org.shaneking.aspectj.helper.AspectJUnit4Runner;
 
 /**
  * @author David Zhang
  */
-@RunWith(AspectJUnit4Runner.class)
-public class TestDummy {
+public class DummyTest {
   private static final boolean DEBUG = false;
   private static boolean beforeClass;
   private boolean before;
 
-  public TestDummy() {
+  public DummyTest() {
     if (DEBUG) System.out.println(getClass().getSimpleName() + " : New Instance!");
   }
 
   @BeforeClass
   public static void beforeClass() {
     beforeClass = true;
-    if (DEBUG) System.out.println(TestDummy.class.getSimpleName() + " : Before class was executed!");
+    if (DEBUG) System.out.println(DummyTest.class.getSimpleName() + " : Before class was executed!");
   }
 
   @AfterClass
   public static void afterClass() {
     System.setProperty("JUnit_AfterClass", "true");
-    if (DEBUG) System.out.println(TestDummy.class.getSimpleName() + " : After class was executed!");
+    if (DEBUG) System.out.println(DummyTest.class.getSimpleName() + " : After class was executed!");
   }
 
   @Before

@@ -1,4 +1,4 @@
-package sktest.aspectj.helper;
+package sktest.aspectj.test;
 
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -29,7 +29,7 @@ public class JUnitLifeCycleTest {
   @Test
   public void run() {
     JUnitCore junitCore = new JUnitCore();
-    Result result = junitCore.run(TestDummy.class);
+    Result result = junitCore.run(DummyTest.class);
     List<Failure> failures = result.getFailures();
     if (!(failures == null || failures.isEmpty())) {
       for (Failure f : failures) {
