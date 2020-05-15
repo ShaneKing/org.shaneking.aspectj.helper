@@ -6,5 +6,5 @@ import sktest.aspectj.test.example.HelloTest;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({HelloTest.class, DummyTest.class, JUnitLifeCycleTest.class})
-public class AspectJTestSuites {
+public class SKAspectJTestSuites {
 }
