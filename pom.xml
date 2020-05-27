@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking.aspectj</groupId>
     <artifactId>org.shaneking.aspectj</artifactId>
-    <version>0.4.8</version>
+    <version>0.5.0</version>
     <relativePath>../org.shaneking.aspectj</relativePath>
   </parent>
 
@@ -25,7 +25,7 @@
   </organization>
   <licenses>
     <license>
-      <name>MIT</name>
+      <name>Apache-2.0</name>
       <url>https://opensource.org/licenses/Apache-2.0</url>
       <distribution>repo</distribution>
       <comments>ShaneKing is released under Apache-2.0 License.</comments>
@@ -96,6 +96,7 @@
     <dependency>
       <groupId>org.shaneking</groupId>
       <artifactId>org.shaneking.test</artifactId>
+      <version>${org.shaneking_version}</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
