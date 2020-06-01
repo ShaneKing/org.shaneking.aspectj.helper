@@ -15,7 +15,7 @@ or
 <dependency>
     <groupId>org.shaneking.aspectj</groupId>
     <artifactId>org.shaneking.aspectj.test</artifactId>
-    <version>0.4.7</version>
+    <version>0.5.2</version>
 </dependency>
 ```
 
